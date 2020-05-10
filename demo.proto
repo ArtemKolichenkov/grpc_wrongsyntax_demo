@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.demoproto";
+option java_outer_classname = "DemoProto";
+option objc_class_prefix = "RTG";
+
+package demo;
+
+service Demo {
+  rpc SayHello(Userinfo) returns (Greeting) {}
+}
+
+message Userinfo {
+  string name = 1;
+}
+
+message Greeting {
+  string greeting = 1;
+}

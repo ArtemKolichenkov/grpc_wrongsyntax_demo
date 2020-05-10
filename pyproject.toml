@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "demo"
+version = "0.1.0"
+description = "gRPC proto definitions for Gigabloat"
+authors = ["Artem Kolichenkov <artem@kolichenkov.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.2"
+grpcio-tools = "^1.28.1"
+grpcio = "^1.28.1"
